@@ -37,7 +37,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3em;
+  gap: 2em;
   margin: 3em 0;
 }
 .featured__event {
@@ -49,11 +49,16 @@ main {
   background-color: darkgray;
 
   .featured__img {
-    width: 200px;
+    width: 300px;
   }
   .featured__event_header,
   .featured__event_description {
     padding-left: 2em;
+    padding-bottom: 2em;
+  }
+  .featured__event_btn {
+    margin-left: 2em;
+    padding: 1em;
   }
 }
 
@@ -61,18 +66,26 @@ main {
 .events {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 1em;
 
   .event__card {
-    background-color: lightgray;
-    width: 30%;
-    padding: 1em;
+    width: 19em;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
+  }
+  .event__card_name {
+    color: red;
+    padding: 0 0.5em;
+    font-weight: 400;
+  }
+  .event__card_btn {
+    padding: 0.5em;
   }
 }
