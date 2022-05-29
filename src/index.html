@@ -21,6 +21,61 @@
     </nav>
     <main>
       <section class="events"></section>
+
+      <!-- hardcoded modal form -->
+      <!-- Trigger/Open The Modal -->
+      <button id="myBtn">Open Modal</button>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="form-popup" id="myForm">
+            <form action="#" class="form-container">
+              <h1>Register for event</h1>
+              <label for="name"><b>Your name</b></label>
+              <input
+                type="text"
+                placeholder="Your name..."
+                name="name"
+                required
+              />
+
+              <label for="surname"><b>Your surname</b></label>
+              <input
+                type="text"
+                placeholder="Your surname..."
+                name="surname"
+                required
+              />
+              <label for="phone"><b>Your phone</b></label>
+              <input
+                type="number"
+                placeholder="Your phone..."
+                name="phone"
+                required
+              />
+
+              <label for="email"><b>Email</b></label>
+              <input
+                type="text"
+                placeholder="Enter Email"
+                name="email"
+                required
+              />
+
+              <label class="container"
+                >I'm old enough to participate
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
+
+              <button type="submit" class="btn">Register</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">
+                Close
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
